@@ -30,8 +30,9 @@ only 3.9 degrees difference on average, 2 degree difference for max.  there coul
 ```
 june_prcp = []
 june_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
-June precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/june_prcp.png).
 ```
+June precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/june_prcp.png).
+
 
 still viable, possibly query on precipitation for June and December
 
