@@ -2,23 +2,20 @@
 Module 9 Challenge
 
 ## Project Overview
-The purpose of this project is to 
-Surf & Shake shop, a potential stakeholder is interested in temperature trends for the months of June and December.
-Deciding to invest in the shop to determine if the business is viable.
+A potential stakeholder for a posible surf and ice cream shop in Oahu, Hawaii is interested in understanding temperature trends to determine the viability of the business. Specifically, the potential stakeholder would like to review temperature data for the months of June and December. The purpose of this project is to gather and analyze June and December temperature data in order for the stakeholder to make a more informed investment decision.
 
-temperature trends before opening the surf shop. Specifically, he wants temperature data for the months of June and December in Oahu, in order to determine if the surf and ice cream shop business is sustainable year-round.
 ## Software & Resources
 - Python 3.8.8
 - SQLAlchemy 1.4.7
-- Starter file: hawaii.sqlite
-
-
+- SQLite database: hawaii.sqlite (stored weather data)
 
 ## Results
+Dataa utilized , SQLAlchemy to query from the hawaii.sqlite database
 Ran analysis using.  The following results were found:
-- June on average is 3 degrees higher than in December
-- Max: 2 degrees difference between June and December
-- slightly higher counts in june, less data points in December, 1700 vs 1517
+- The average temperature in June is 3.9 degrees warmer than December. 
+- The lowest temperature in December is 8 degrees cooler than the lowest temperature in June.
+- June has a higher max temperature than Decemver; however, it reveals a difference of 2 degrees.
+- There are 11.3% less data points in December (June: 1700, December: 1517).
 
 #### Summary statistics for June temperatures
 ![fig1](https://github.com/retroxsky06/surfs_up/blob/main/Resources/June_temps.png)
