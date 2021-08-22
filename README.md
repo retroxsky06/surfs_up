@@ -27,7 +27,7 @@ Base on the findings of the analysis, the differences are by a at 2-3 degrees.
 
 only 3.9 degrees difference on average, 2 degree difference for max.  there could possibly be less customers in December, however more analysis is needed to determine.  In addition to temperatures, it would be best to perform another analysis that gathers precipitation data for June and December.  It's not conclusive to say that it is statistically significant.
 
-June precipitation summary statistics, [https://github.com/retroxsky06/surfs_up/blob/main/Resources/june_prcp.png](view here).
+June precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/june_prcp.png).
 
 still viable, possibly query on precipitation for June and December
 
