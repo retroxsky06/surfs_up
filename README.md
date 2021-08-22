@@ -33,6 +33,12 @@ june_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('mo
 ```
 June precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/june_prcp.png).
 
+
+``` dec_prcp = []
+dec_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
+```
+
+
 December precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/dec_prcp.png).
 
 still viable, possibly query on precipitation for June and December
