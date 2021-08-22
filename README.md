@@ -12,7 +12,7 @@ A potential stakeholder for a posible surf and ice cream shop in Oahu, Hawaii is
 ## Results
 - The average temperature in June is 3.9 degrees warmer than December. 
 - The lowest temperature in December is 8 degrees cooler than the lowest temperature in June.
-- June has a higher max temperature than Decemver; however, it reveals a difference of 2 degrees.
+- June has a higher max temperature than December, revealing a difference of 2 degrees.
 - There are 11.3% less data points in December (June: 1700, December: 1517).
 
 #### Summary statistics for June temperatures
@@ -23,7 +23,10 @@ A potential stakeholder for a posible surf and ice cream shop in Oahu, Hawaii is
 
 
 ## Summary
-Base on the findings of the analysis, 
+Base on the findings of the analysis, the differences are by a at 2-3 degrees.
+
+only 3.9 degrees difference on average, 2 degree difference for max.  there could possibly be less customers in December, however more analysis is needed to determine.  In addition to temperatures, it would be best to perform another analysis that gathers precipitation data for June and December.  It's not conclusive to say that it is statistically significant.
+
 
 still viable, possibly query on precipitation for June and December
 
