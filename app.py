@@ -12,10 +12,12 @@
 import datetime as dt
 import numpy as np
 import pandas as pd
+
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine, func
+
 from flask import Flask
 from flask import jsonify
 
@@ -41,7 +43,7 @@ def welcome():
     /api/v1.0/temp/start/end
     ''')
 
-# precipitation route
+# create precipitation route
 @app.route("/api/v1.0/precipitation")
 def precipitation():
     prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
@@ -49,22 +51,24 @@ def precipitation():
     precip = {date: prcp for date, prcp in precipitation}
     return jsonify(precip)
 
-# stations route
+# create stations route
 @app.route("/api/v1.0/stations")
 def stations():
     results = session.query(Station.station).all()
     stations = list(np.ravel(results))
     return jsonify(stations=stations)
 
-# monthly temperature route
+# create monthly temperature route
 @app.route("/api/v1.0/tobs")
 def temp_monthly():
     prev_year = dt.date(2017, 8, 23) - dt.timedelta(days=365)
-    results = session.query(Measurement.tobs).filter(Measurement.station == 'USC00519281').filter(Measurement.date >= prev_year).all()
+    results = session.query(Measurement.tobs).\
+      filter(Measurement.station == 'USC00519281').\
+      filter(Measurement.date >= prev_year).all()
     temps = list(np.ravel(results))
     return jsonify(temps=temps)
 
-# statistics route
+# create statistics route
 @app.route("/api/v1.0/temp/<start>")
 @app.route("/api/v1.0/temp/<start>/<end>")
 def stats(start=None, end=None):
