@@ -1,8 +1,7 @@
-# Waves and Ice Cream: Examining Temperature Trends in June and December
+# Waves and Ice Cream: Examining Oahu Temperature Trends in June and December
 Module 9 Challenge
 
 ## Project Overview
-
 The purpose of this project is to 
 Surf & Shake shop, a potential stakeholder is interested in temperature trends for the months of June and December.
 Deciding to invest in the shop to determine if the business is viable.
