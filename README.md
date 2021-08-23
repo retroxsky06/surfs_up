@@ -23,30 +23,22 @@ A potential stakeholder for a posible surf and ice cream shop in Oahu, Hawaii is
 
 
 ## Summary
-Base on the findings of the analysis, the differences are by a at 2-3 degrees.
+Based on the findings of the above analysis, there could be a possibility of having a lesser number of customers in the month of December due to cooler temperatures; however further analysis is needed.  As shown above, the difference in average temperature is 3.9 degrees Fahrenheit between June and December, which may not be enough information to guide the stakeholder. To provide additional weather data that can inform the stakeholder's decision, I would perform two queries to gather and analyze precipitation data for the months of June and December.
 
-only 3.9 degrees difference on average, 2 degree difference for max.  there could possibly be less customers in December, however more analysis is needed to determine.  In addition to temperatures, it would be best to perform another analysis that gathers precipitation data for June and December.  It's not conclusive to say that it is statistically significant.
-
+To run the query that would obtain June precipitation data, I would use the code below:
 ```
 june_prcp = []
 june_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 6).all()
 ```
-June precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/june_prcp.png).
+For the June precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/june_prcp.png).
 
-
+To run the query that would obtain December precipitation data, I would use the code below:
 ``` 
 dec_prcp = []
 dec_prcp = session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date) == 12).all()
 ```
-
-
-December precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/dec_prcp.png).
+For the December precipitation summary statistics, [view here](https://github.com/retroxsky06/surfs_up/blob/main/Resources/dec_prcp.png).
 
 still viable, possibly query on precipitation for June and December
-
-For this part of the Challenge, write a report that describes the key differences in weather between June and December and two recommendations for further analysis.
-
-Provide a high-level summary of the results and two additional queries that you would perform to gather more weather data for June and December.
-
 
 
