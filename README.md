@@ -1,4 +1,4 @@
-# Waves and Ice Cream: Examining Oahu Temperature Trends in June and December
+# Potential Waves and Ice Cream Shop: Examining Oahu Temperature Trends in June and December
 Module 9 Challenge
 
 ## Project Overview
